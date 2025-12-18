@@ -595,19 +595,190 @@
         }
 
 
-        /* 響應式調整 */
-        @media (max-width: 600px) {
+        /* ==================== 響應式調整 ==================== */
+
+        /* 大螢幕桌面 (1200px+) */
+        @media (min-width: 1200px) {
             body {
-                padding: 15px;
+                padding: 40px;
             }
 
             .container {
-                padding: 25px 20px;
-                border-radius: 25px;
+                max-width: 1000px;
+                padding: 50px 60px;
             }
 
             h1 {
-                font-size: 1.6em;
+                font-size: 2.4em;
+                margin-bottom: 50px;
+            }
+
+            .section-box {
+                padding: 30px;
+            }
+
+            .checkbox-group {
+                gap: 15px;
+            }
+
+            .checkbox-group div {
+                min-width: 160px;
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 12px 24px;
+                font-size: 0.95em;
+            }
+
+            .free-text-buttons {
+                gap: 15px;
+            }
+
+            .free-text-buttons button {
+                padding: 12px 20px;
+            }
+
+            #generate-btn {
+                padding: 20px 60px;
+                font-size: 1.35em;
+            }
+
+            .result-item {
+                padding: 14px 16px 14px 10px;
+            }
+
+            .result-text {
+                font-size: 1em;
+                padding-right: 15px;
+            }
+
+            .result-actions button {
+                width: 42px;
+                height: 42px;
+                font-size: 1.4em;
+            }
+
+            .bottom-action-bar.expanded {
+                width: 450px;
+            }
+
+            .theme-switcher button {
+                width: 42px;
+                height: 42px;
+                font-size: 1.35em;
+            }
+
+            .help-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 1.35em;
+            }
+        }
+
+        /* 平板橫向 (1024px - 1199px) */
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            body {
+                padding: 30px;
+            }
+
+            .container {
+                max-width: 900px;
+                padding: 40px 45px;
+            }
+
+            h1 {
+                font-size: 2.1em;
+            }
+
+            .checkbox-group div {
+                min-width: 140px;
+            }
+        }
+
+        /* 平板直向 iPad (768px - 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            body {
+                padding: 25px;
+            }
+
+            .container {
+                max-width: 720px;
+                padding: 35px 40px;
+            }
+
+            h1 {
+                font-size: 1.9em;
+                margin-bottom: 35px;
+            }
+
+            .section-box {
+                padding: 22px;
+            }
+
+            .checkbox-group {
+                gap: 12px;
+            }
+
+            .checkbox-group div {
+                min-width: 130px;
+                flex: 0 0 calc(33.333% - 10px);
+            }
+
+            .quick-fill-group {
+                gap: 10px;
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 10px 16px;
+                font-size: 0.88em;
+            }
+
+            .free-text-buttons {
+                gap: 10px;
+            }
+
+            #generate-btn {
+                padding: 16px 45px;
+                font-size: 1.2em;
+            }
+
+            .bottom-action-bar.expanded {
+                width: 380px;
+            }
+
+            .result-item {
+                padding: 10px 14px 10px 8px;
+            }
+
+            .result-actions button {
+                width: 38px;
+                height: 38px;
+                font-size: 1.25em;
+            }
+
+            .theme-switcher {
+                right: 15px;
+                top: 55px;
+            }
+
+            .help-btn {
+                right: 15px;
+                top: 15px;
+            }
+        }
+
+        /* 大手機/小平板 (601px - 767px) */
+        @media (min-width: 601px) and (max-width: 767px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 30px 28px;
+            }
+
+            h1 {
+                font-size: 1.75em;
                 margin-bottom: 30px;
             }
 
@@ -615,50 +786,282 @@
                 padding: 20px;
             }
 
+            .checkbox-group div {
+                min-width: 110px;
+                flex: 0 0 calc(50% - 8px);
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 9px 14px;
+                font-size: 0.85em;
+            }
+
+            .free-text-buttons.row-1,
+            .free-text-buttons.row-2 {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .free-text-buttons.row-3 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #generate-btn {
+                padding: 15px 40px;
+                font-size: 1.15em;
+            }
+
             .bottom-action-bar.expanded {
-                right: 15px;
-                width: calc(100vw - 30px);
+                width: 340px;
+            }
+        }
+
+        /* 手機 (max-width: 600px) */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
             }
 
-            .bottom-action-bar.collapsed {
-                right: 15px;
+            .container {
+                padding: 22px 18px;
+                border-radius: 22px;
             }
 
-            .back-to-top {
-                left: 15px;
-                width: 50px;
-                height: 50px;
-                font-size: 1.4em;
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 25px;
+            }
+
+            .section-box {
+                padding: 18px 15px;
+                border-radius: 16px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 1.05em;
+                margin-bottom: 15px;
+            }
+
+            label {
+                font-size: 0.9em;
+                margin-top: 14px;
+            }
+
+            input[type="text"], select, textarea {
+                padding: 12px 14px;
+                border-radius: 12px;
+                font-size: 16px; /* 防止iOS縮放 */
+            }
+
+            .checkbox-group {
+                gap: 8px;
+                row-gap: 8px;
+            }
+
+            .checkbox-group div {
+                min-width: 100px;
+                flex: 0 0 calc(50% - 5px);
+            }
+
+            .checkbox-group label {
+                font-size: 0.85em;
+            }
+
+            .quick-fill-group {
+                gap: 8px;
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 8px 12px;
+                font-size: 0.8em;
+                border-radius: 12px;
+            }
+
+            .quantity-group {
+                gap: 6px;
+            }
+
+            .free-text-buttons {
+                gap: 8px;
+                margin-top: 10px;
+            }
+
+            .free-text-buttons.row-1,
+            .free-text-buttons.row-2 {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .free-text-buttons.row-3 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .free-text-buttons button {
+                padding: 8px 10px;
+                font-size: 0.8em;
+            }
+
+            .placeholder-text {
+                font-size: 0.8em;
+            }
+
+            .action-zone {
+                margin-top: 25px;
+            }
+
+            #generate-btn {
+                font-size: 1.05em;
+                padding: 14px 25px;
+                border-radius: 16px;
+            }
+
+            #results-container {
+                margin-top: 35px;
+                padding-top: 25px;
+                margin-bottom: 120px;
             }
 
             .result-item {
                 padding: 8px 10px 8px 6px;
+                border-radius: 12px;
+                margin-bottom: 6px;
             }
 
             .result-text {
-                padding: 0 10px 0 0;
-                font-size: 0.9em;
+                padding: 0 8px 0 0;
+                font-size: 0.88em;
+                line-height: 1.35;
             }
 
             .result-actions {
-                gap: 6px;
+                gap: 5px;
             }
 
             .result-actions button {
-                width: 34px;
-                height: 34px;
-                font-size: 1.2em;
+                width: 32px;
+                height: 32px;
+                font-size: 1.1em;
             }
 
             .tweet-checkbox {
                 margin: 2px 6px 0 3px;
-                width: 15px;
-                height: 15px;
+                width: 14px;
+                height: 14px;
+            }
+
+            .bottom-action-bar {
+                bottom: 12px;
+                right: 12px;
+            }
+
+            .bottom-action-bar.expanded {
+                width: calc(100vw - 24px);
+                right: 12px;
+            }
+
+            .bottom-action-bar.collapsed {
+                right: 12px;
+                width: 55px;
+            }
+
+            .action-bar-header {
+                padding: 12px 16px;
+                font-size: 0.9em;
+            }
+
+            .action-bar-content {
+                padding: 14px;
+            }
+
+            .bottom-action-bar button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .back-to-top {
+                width: 48px;
+                height: 48px;
+                font-size: 1.3em;
+            }
+
+            .custom-modal-content {
+                padding: 28px 25px;
+                border-radius: 20px;
+                width: 92%;
+            }
+
+            .custom-modal-content p {
+                font-size: 0.95em;
+            }
+
+            .custom-modal-content button {
+                padding: 10px 28px;
+                font-size: 0.95em;
+            }
+        }
+
+        /* 超小手機 (max-width: 380px) */
+        @media (max-width: 380px) {
+            body {
+                padding: 8px;
+            }
+
+            .container {
+                padding: 18px 14px;
+                border-radius: 18px;
+            }
+
+            h1 {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+
+            .section-box {
+                padding: 15px 12px;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            .checkbox-group div {
+                flex: 0 0 100%;
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 7px 10px;
+                font-size: 0.75em;
+            }
+
+            .free-text-buttons.row-1,
+            .free-text-buttons.row-2,
+            .free-text-buttons.row-3 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .free-text-buttons button {
+                padding: 7px 8px;
+                font-size: 0.75em;
             }
 
             #generate-btn {
-                font-size: 1.1em;
-                padding: 15px 30px;
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+
+            .result-actions button {
+                width: 30px;
+                height: 30px;
+                font-size: 1em;
+            }
+
+            .bottom-action-bar.expanded {
+                width: calc(100vw - 16px);
+                right: 8px;
+            }
+
+            .bottom-action-bar.collapsed {
+                right: 8px;
+                width: 50px;
             }
         }
 
@@ -895,6 +1298,36 @@
             margin-right: 8px;
         }
 
+        /* 響應式 - 固定元素（語言、主題、教學） */
+        @media (min-width: 1200px) {
+            .lang-switcher {
+                left: 20px;
+                top: 20px;
+            }
+
+            .help-btn {
+                right: 20px;
+                top: 20px;
+            }
+
+            .theme-switcher {
+                right: 20px;
+                top: 65px;
+            }
+
+            .tutorial-content {
+                max-width: 650px;
+                padding: 40px 50px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .tutorial-content {
+                max-width: 550px;
+                padding: 30px 35px;
+            }
+        }
+
         @media (max-width: 600px) {
             .lang-switcher {
                 left: 8px;
@@ -916,6 +1349,80 @@
             .lang-switcher.expanded button {
                 max-width: 45px;
                 padding: 3px 6px;
+            }
+
+            .help-btn {
+                right: 8px;
+                top: 8px;
+                width: 28px;
+                height: 28px;
+                font-size: 1em;
+            }
+
+            .theme-switcher {
+                right: 8px;
+                top: 42px;
+                padding: 4px;
+                gap: 4px;
+            }
+
+            .theme-switcher button {
+                width: 30px;
+                height: 30px;
+                font-size: 1em;
+            }
+
+            .tutorial-content {
+                padding: 25px 22px;
+                max-width: 95%;
+                max-height: 85vh;
+            }
+
+            .tutorial-content h2 {
+                font-size: 1.1em;
+            }
+
+            .tutorial-content .tip {
+                padding: 10px 12px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .lang-switcher {
+                left: 6px;
+                top: 6px;
+            }
+
+            .lang-switcher button {
+                font-size: 0.6em;
+            }
+
+            .help-btn {
+                right: 6px;
+                top: 6px;
+                width: 26px;
+                height: 26px;
+            }
+
+            .theme-switcher {
+                right: 6px;
+                top: 38px;
+            }
+
+            .theme-switcher button {
+                width: 26px;
+                height: 26px;
+                font-size: 0.9em;
+            }
+
+            .tutorial-content {
+                padding: 20px 18px;
+            }
+
+            .tutorial-content .tip {
+                padding: 8px 10px;
+                font-size: 0.85em;
             }
         }
     </style>
@@ -1183,7 +1690,7 @@
             themeSeries: "劇集/作品",
             themeChemistry: "兩人的化學反應",
             themeVisuals: "外貌打扮",
-            themeHype: "純支持/打氣",
+            themeHype: "純���持/打氣",
             themeOst: "OST/主題曲",
             themeCallToAction: "呼籲",
             outputLangLabel: "2. 輸出語言：",
@@ -1300,7 +1807,7 @@
             themeChemistry: "เคมี",
             themeVisuals: "ภาพลักษณ์/สไตล์",
             themeHype: "ซัพพอร์ต/ให้กำลังใจ",
-            themeOst: "เพลงประกอบ",
+            themeOst: "เพลงประก���บ",
             themeCallToAction: "เรียกร้อง",
             outputLangLabel: "2. ภาษาผลลัพธ์:",
             outputLangEn: "อังกฤษ",
@@ -1338,22 +1845,22 @@
             tutorialBatchTitle: "🔄 การดำเนินการเป็นกลุ่ม",
             tutorialBatchDesc: "ใช้ 'สลับการเลือก' เพื่อเลือกทวีตที่ไม่ได้ติ๊ก ด้านล่างแสดงจำนวนที่เลือก",
             tutorialExportTitle: "💾 ตัวเลือกส่งออก",
-            tutorialExportDesc: "รองรับการคัดลอกไปคลิปบอร์ด ส่งออกเป็น CSV (Excel) และไฟล์ TXT",
+            tutorialExportDesc: "รองรับการคัดลอกไปคลิปบอร์ด ส่งออกเป็น CSV (Excel) และไฟล��� TXT",
             tutorialDontShow: "ไม่ต้องแสดงอีก",
             tutorialGotIt: "เข้าใจแล้ว"
         }
     };
 
-    let currentLang = 'zh'; // 默认语言
+    let currentLang = 'zh'; // 預設語言
 
     let langSwitcherTimeout;
     let pageIdleTimeout;
 
-    // 切换语言函数
+    // 切換語言函數
     function switchLanguage(lang) {
         currentLang = lang;
 
-        // 更新按钮状态
+        // 更新按鈕狀態
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.remove('active');
             if (btn.dataset.lang === lang) {
@@ -1361,7 +1868,7 @@
             }
         });
 
-        // 更新所有翻译文本
+        // 更新所有翻譯文本
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
             if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
@@ -1373,7 +1880,7 @@
                 } else if (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && el.type !== 'checkbox' && el.type !== 'radio')) {
                     el.placeholder = TRANSLATIONS[lang][key];
                 } else if (el.tagName === 'BUTTON' && el.id) {
-                    // 为按钮更新文本，但保留emoji
+                    // 為按鈕更新文本，但保留emoji
                     const currentText = el.textContent.trim();
                     const emoji = currentText.match(/^[📋📊📝]/);
                     if (emoji) {
@@ -1387,10 +1894,10 @@
             }
         });
 
-        // 更新动态消息文本
+        // 更新動態消息文本
         updateDynamicTexts(lang);
 
-        // 更新工具栏标题
+        // 更新工具欄標題
         const barTitle = document.getElementById('bar-title');
         const bottomBar = document.getElementById('bottom-bar');
         if (barTitle && bottomBar) {
@@ -1401,7 +1908,7 @@
             }
         }
 
-        // 1.5秒后自动收合语言切换器
+        // 1.5秒後自動收合語言切換器
         const langSwitcher = document.querySelector('.lang-switcher');
         if (langSwitcher) {
             clearTimeout(langSwitcherTimeout);
@@ -1410,15 +1917,15 @@
             }, 1500);
         }
 
-        // 保存语言偏好
+        // 保存語言偏好
         try {
             localStorage.setItem('preferredLang', lang); // eslint-disable-line no-restricted-globals
         } catch (e) {
-            // localStorage 不可用时静默失败
+            // localStorage 不可用時靜默失敗
         }
     }
 
-    // 页面静置时自动收合语言切换器
+    // 頁面靜置時自動收合語言切換器
     function resetPageIdleTimer() {
         const langSwitcher = document.querySelector('.lang-switcher');
         if (!langSwitcher) return;
@@ -1426,10 +1933,10 @@
         clearTimeout(pageIdleTimeout);
         pageIdleTimeout = setTimeout(() => {
             langSwitcher.classList.remove('expanded');
-        }, 1500); // 1.5秒静置后自动收合
+        }, 1500); // 1.5秒靜置後自動收合
     }
 
-    // 滑动或其他活动时立即收合语言切换器
+    // 滑動或其他活動時立即收合語言切換器
     function collapseLanguageSwitcher() {
         const langSwitcher = document.querySelector('.lang-switcher');
         if (langSwitcher && langSwitcher.classList.contains('expanded')) {
@@ -1437,13 +1944,13 @@
         }
     }
 
-    // 更新动态文本（消息框、确认按钮等）
+    // 更新動態文本（消息框、確認按鈕等）
     function updateDynamicTexts(lang) {
-        // 这个函数在生成消息时会被调用
-        // 暂时保留为占位符
+        // 這個函數在生成消息時會被調用
+        // 暫時保留為佔位符
     }
 
-    // 页面加载时恢复语言设置
+    // 頁面載入時���復語言設置
     document.addEventListener('DOMContentLoaded', () => {
         try {
             const savedLang = localStorage.getItem('preferredLang'); // eslint-disable-line no-restricted-globals
@@ -1642,7 +2149,7 @@
                 "The sparks between {Input} are FLYING I can feel it!!!",
                 "I'm totally SOLD on {Input} their chemistry is everything!!!",
                 "{Input} is the best, byebye ghostship 555555",
-                // CP互動相關 - Eye Contact & Skinship
+                // CP互动相关 - Eye Contact & Skinship
                 "The EYE CONTACT between {Input} is INTENSE I'm blushing so hard!!!",
                 "Did you see the way {Input} hold hands? My heart can't take this!!!",
                 "{Input} clingy moments are the CUTEST THING EVER I'm screaming!!!",
@@ -1694,25 +2201,25 @@
                 "This scene in {Input} had me CRYING it's too powerful!!!!",
                 "{Input} performance is OUTSTANDING I'm beyond impressed!!!!",
                 "{Input} is quiet tension",
-"{Input} is controlled fear",
-"{Input} is steady unease",
-"{Input} is calm before impact",
-"{Input} is silent danger",
-"{Input} is restrained chaos",
-"{Input} is low-burning suspense",
-“{Input} is held breath",
-"{Input} is slow dread",
-              " {Input} is watchful stillness",
-"{Input} is measured risk",
-"{Input} is tension in balance",
-"{Input} is composed love",
-"{Input} is calm with teeth",
-"{Input} is pressure beneathInput",
-"{Input} is danger without noise",
-"{Input} is steady pulse",
-"{Input} is quiet countdown",
-"{Input} is anticipation sharpened",
- "{Input} is calm that cuts"
+                "{Input} is controlled fear",
+                "{Input} is steady unease",
+                "{Input} is calm before impact",
+                "{Input} is silent danger",
+                "{Input} is restrained chaos",
+                "{Input} is low-burning suspense",
+                "{Input} is held breath",
+                "{Input} is slow dread",
+                "{Input} is watchful stillness",
+                "{Input} is measured risk",
+                "{Input} is tension in balance",
+                "{Input} is composed love",
+                "{Input} is calm with teeth",
+                "{Input} is pressure beneath",
+                "{Input} is danger without noise",
+                "{Input} is steady pulse",
+                "{Input} is quiet countdown",
+                "{Input} is anticipation sharpened",
+                "{Input} is calm that cuts"
             ],
             ost: [
                 "The new OST for {Input} is absolutely perfect, I've been listening on repeat!",
@@ -1754,7 +2261,7 @@
                 // CP向 & 人物（適用於藝人/角色，不適用於劇集）
                 "โอ้ยยยย {Input} ทำถึงมากกกกกก ไม่ไหวแล้วแม่ ahhhhhh",
                 "กรี๊ดดดดดดด {Input} ดีงามพระรามแปดมากเวอร์ 55555555",
-                "ช่วยด้วยยยย {Input} หล่อ/สวย ทำลายล้างมากกกกกก",
+                "ช่วยด้วยยยย {Input} หล่อ/สว��� ทำลา���ล้างมากกกกกก",
                 "รัก {Input} เท่าจักรวาลลลลลลลลลลลลลลลล",
                 "ชอบมากกกกก {Input} ทำได้ดีเสมอมาาาา",
                 "จะซัพพอร์ต {Input} ตลอดไปไม่ว่าจะเกิดอะไร!!!",
@@ -1789,7 +2296,7 @@
                 "เขาน่ารักมากกกก จะร้องไห้แล้ว {Input} คือทุกอย่าง!!!",
                 "เขาหล่อมากกกก {Input} ทำให้หายใจไม่ออก!!!",
                 "ออร่าของ {Input} ต่างจากคนอื่นมากกกก!!!",
-                "คาริสม่าของ {Input} แรงสุดๆ เหลือเชื่อ!!!",
+                "คา���ิสม่าของ {Input} แรงสุดๆ เหลือเชื่อ!!!",
                 "ทุกอย่างที่ {Input} ทำดูเท่สุดๆ!!!",
                 "พลังของ {Input} ไม่มีใครเทียบได้เลย!!!",
                 "ท่าทางของ {Input} ดูน่าดึงดูดมากกกก!!!",
@@ -1798,7 +2305,7 @@
                 "หลงใหลไม่พอจะอธิบายความรู้สึกต่อ {Input}!!!",
                 // 劇集/角色（可包含劇集名）
                 "สารวัตรหล่อ {Input} น่าสนใจมากในซีนนี้!!",
-                "กัปตัน {Input} ขี���มอเตอร์ไซค์เท่มากกกก~",
+                "กัปตัน {Input} ขี่มอเตอร์ไซค์เท่มากกกก~",
                 "สารวัตร {Input} ไขคดีคือสิ่งที่ชอบดูมากที่สุด",
                 "กัปตัน {Input} ในซีนแอ็คชั่น? สมบูรณ์แบบเลย!!!",
                 "พัฒนาการของตัวละคร {Input} เขียนได้สวยมาก!!!",
@@ -1829,7 +2336,7 @@
                 "{Input} คือที่สุดของที่สุด ไม่มีใครต้านได้แล้ว",
                 "เขินจนตัวบิดไปหมดแล้วกับ {Input} งื้ออออออออออ",
                 "ใครไหวไปก่อนเลย ทางนี้ไม่ไหวกับ {Input} แล้ว",
-                "ขอยาดมด่วนนนน {Input} แรงมากกกกกกกก",
+                "ขอยาดมด่วนนนน {Input} แรงมากกกก���กกก",
                 "{Input} ดีมากกกก ตื่นเต้นจนนอนไม่หลับเลย!!!",
                 "ตื่นเต้นมากกกกกก {Input} ทำให้ใจเต้นแรงงงงง",
                 "เร้าใจสุดๆ กับ {Input} รอไม่ไหวแล้วววว",
@@ -1864,7 +2371,7 @@
                 "หัวใจเต็มเปี่ยมมากกก จะระเบิดแล้ว!!!",
                 "ทำให้อาทิตย์นี้สมบูรณ์เลย ไม่มีตลก!!!",
                 "ไม่โอเค ไม่มีทางโอเคได้อีกแล้ว!!!",
-                "กำลังลอยสู่สวรรค์อยู่ตอนนี้เลย!!!",
+                "กำลังลอยสู���สวรรค์อยู���ตอนนี้เลย!!!",
                 "นี่คือทุกอย่างที่หวังและมากกว่า!!!",
                 "ไม่มีคำพูดเหลือ มีแต่ความรู้สึก!!!",
                 "ร้องไห้น้ำตาดีใจ สวยงามมาก!!!",
@@ -1876,7 +2383,7 @@
             ],
             chemistry: [
                 // CP 向
-                "เค���ีเคใจของ {Input} มันฟุ้งกระจายไปหมดดดดดดด",
+                "เคมีเคใจของ {Input} มันฟุ้งกระจายไปหมดดดดดดด",
                 "สายตาที่ {Input} มองกันมันมีความหมายซ่อนอยู่ 555555555",
                 "{Input} เคมีกันดีมากกกก ลงตัวที่สุดดด!!!",
                 "ธรรมชาติมากกกก {Input} อยู่ด้วยกันแล้วโลกสดใส",
@@ -1900,7 +2407,7 @@
                 "{Input} มองกันแบบนี้ ทนไม่ไหวแล้วจริงๆ!!!",
                 "หยุดนะ {Input} วางมือแบบนี้หัวใจไม่ไหวแล้ว!!!",
                 "เพิ่งสังเกต {Input} positioning ธรรมชาติมาก ลงตัวสุดๆ",
-                "{Input} possessive moments ทำให้รู้สึกอะไรบางอย่าง!!!",
+                "{Input} possessive moments ทำให้รู้สึกอะไรบางอย่���ง!!!",
                 "{Input} อยู่ใกล้กันตลอด ไม่อยากให้ห่างกันเลย!!!",
                 "ช่วงที่ {Input} แตะกัน หยุดหายใจไปเลยจริงๆ!!!",
                 "{Input} อยู่ใกล้กันแบบนี้ผิดกฎหมายแล้วนะ หัวใจไม่ไหว!!!",
@@ -1935,12 +2442,32 @@
                 "ดู {Input} จบรอบแล้ว คุ้มค่าทุกนาทีเลย",
                 "ตอนนี้ของ {Input} ยอดเยี่ยมมาก ประทับใจสุดๆ",
                 "การแสดงของ {Input} พัฒนาไปไกลมาก ภูมิใจสุดๆ",
-                "ขนลุกไปหมดแล้ว {Input} เล่นดีจนต้องกราบ",
+                "ขนลุกไปหมดแล้ว {Input} เล่นด���จนต้องกราบ",
                 "บทบาทนี้เกิดมาเพื่อ {Input} จริงๆ ยอมรับเลย",
                 "{Input} ไม่เคยทำให้ผิดหวังเลยจริงๆ เก่งมาก!",
                 "{Input} แสดงดีมากกกก ควรได้รางวัลเลย!!!",
                 "ซีนนี้ใน {Input} ทำให้น้ำตาไหล ซึ้งมากกก",
-                "{Input} การแสดงระดับเทพ ประทับใจสุดๆ"
+                "{Input} การแสดงระดับเทพ ประทับใจสุดๆ",
+                "{Input} คือความตึงเครียดที่เงียบ",
+                "{Input} คือความกลัวที่ควบคุมได้",
+                "{Input} คือความไม่สบายใจที่คงที่",
+                "{Input} คือความสงบก่อนพายุ",
+                "{Input} คืออันตรายที่เงียบงัน",
+                "{Input} คือความโกลาหลที่ถูกกดไว้",
+                "{Input} คือความระทึกที่ค่อยๆ ลุกไหม้",
+                "{Input} คือลมหายใจที่กลั้นไว้",
+                "{Input} คือความหวาดกลัวที่ช้าๆ",
+                "{Input} คือความนิ่งที่เฝ้าดู",
+                "{Input} คือความเสี่ยงที่วัดได้",
+                "{Input} คือความตึงเครียดที่สมดุล",
+                "{Input} คือความรักที่สงบ",
+                "{Input} คือความสงบที่มีเขี้ยว",
+                "{Input} คือแรงกดดันที่ซ่อนอยู่",
+                "{Input} คืออันตรายไร้เสียง",
+                "{Input} คือจังหวะที่คงที่",
+                "{Input} คือการนับถอยหลังที่เงียบ",
+                "{Input} คือความคาดหวังที่คมกริบ",
+                "{Input} คือความสงบที่ตัดเฉือน"
             ],
             ost: [
                 "เพลงประกอบ {Input} ฟังเพราะมากกกก ฟังซ้ำไปซ้ำมาเลย",
@@ -1953,8 +2480,8 @@
                 "{Input} soundtrack เพราะทุกเพลงเลย ชอบสุดๆ",
                 "ติดหู {Input} OST มากกกก ฟังไปร้องไปเลย!!!",
                 "ทุกเพลงใน {Input} คือผลงานชิ้นเอก เพราะมาก",
-                "{Input} OST ทำให้น้ำตาไหล ซาวด์แทร็กดีมาก!!!",
-                "ดนตรีใน {Input} เพิ่มอารมณ์มากกกก เพราะสุดๆ",
+                "{Input} OST ทำให้น้ำตาไหล ซาวด์แทร็ก���ีมาก!!!",
+                "���นตรีใน {Input} เพิ่มอารมณ์มากกกก เพราะสุดๆ",
                 "เพลง {Input} ฟังไม่พอ เพราะเกินห้ามใจ!!!",
                 "{Input} theme song คือเพลงโปรดใหม่ ฟังตลอด"
             ],
@@ -2246,7 +2773,7 @@
     function selectAppropriateInput(inputArray, targetLang) {
         if (!inputArray || inputArray.length === 0) return null;
 
-        // 過濾掉不合適的詞（例如英文推文不使用泰文詞）
+        // 過濾掉不合適���詞（例如英文推文不使用泰文詞）
         const suitableInputs = inputArray.filter(input => {
             if (targetLang === 'en' && containsThai(input)) {
                 return false;
