@@ -1644,7 +1644,7 @@ Generate tweets of >15words, with your desired tags, quickly trend for your cp (
                 "The sparks between {Input} are FLYING I can feel it!!!",
                 "I'm totally SOLD on {Input} their chemistry is everything!!!",
                 "{Input} is the best, byebye ghostship 555555",
-                // CP互动相关 - Eye Contact & Skinship
+                // CP互動相關 - Eye Contact & Skinship
                 "The EYE CONTACT between {Input} is INTENSE I'm blushing so hard!!!",
                 "Did you see the way {Input} hold hands? My heart can't take this!!!",
                 "{Input} clingy moments are the CUTEST THING EVER I'm screaming!!!",
@@ -1694,7 +1694,27 @@ Generate tweets of >15words, with your desired tags, quickly trend for your cp (
                 "I am so proud of how far {Input} has come in their acting journey, amazing work",
                 "{Input} acting is PHENOMENALLLLL absolutely award-worthy!!!",
                 "This scene in {Input} had me CRYING it's too powerful!!!!",
-                "{Input} performance is OUTSTANDING I'm beyond impressed!!!!"
+                "{Input} performance is OUTSTANDING I'm beyond impressed!!!!",
+                "{Input} is quiet tension",
+"{Input} is controlled fear",
+"{Input} is steady unease",
+"{Input} is calm before impact",
+"{Input} is silent danger",
+"{Input} is restrained chaos",
+"{Input} is low-burning suspense",
+“{Input} is held breath",
+"{Input} is slow dread",
+              " {Input} is watchful stillness",
+"{Input} is measured risk",
+"{Input} is tension in balance",
+"{Input} is composed love",
+"{Input} is calm with teeth",
+"{Input} is pressure beneathInput",
+"{Input} is danger without noise",
+"{Input} is steady pulse",
+"{Input} is quiet countdown",
+"{Input} is anticipation sharpened",
+ "{Input} is calm that cuts"
             ],
             ost: [
                 "The new OST for {Input} is absolutely perfect, I've been listening on repeat!",
