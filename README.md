@@ -1,5 +1,6 @@
 # TrendingTweets_JD
 
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -818,72 +819,74 @@
         /* 手機 (max-width: 600px) */
         @media (max-width: 600px) {
             body {
-                padding: 12px;
+                padding: 15px;
             }
 
             .container {
-                padding: 22px 18px;
-                border-radius: 22px;
+                padding: 25px 20px;
+                border-radius: 25px;
+                max-width: 100%;
             }
 
             h1 {
-                font-size: 1.5em;
-                margin-bottom: 25px;
+                font-size: 1.6em;
+                margin-bottom: 28px;
             }
 
             .section-box {
-                padding: 18px 15px;
-                border-radius: 16px;
-                margin-bottom: 20px;
+                padding: 20px 18px;
+                border-radius: 18px;
+                margin-bottom: 22px;
             }
 
             h2 {
-                font-size: 1.05em;
-                margin-bottom: 15px;
+                font-size: 1.1em;
+                margin-bottom: 18px;
             }
 
             label {
-                font-size: 0.9em;
-                margin-top: 14px;
+                font-size: 0.95em;
+                margin-top: 16px;
             }
 
             input[type="text"], select, textarea {
-                padding: 12px 14px;
-                border-radius: 12px;
+                padding: 14px 16px;
+                border-radius: 14px;
                 font-size: 16px; /* 防止iOS縮放 */
             }
 
             .checkbox-group {
-                gap: 8px;
-                row-gap: 8px;
+                gap: 10px;
+                row-gap: 10px;
             }
 
             .checkbox-group div {
                 min-width: 100px;
-                flex: 0 0 calc(50% - 5px);
+                flex: 0 0 calc(50% - 6px);
             }
 
             .checkbox-group label {
-                font-size: 0.85em;
+                font-size: 0.9em;
             }
 
             .quick-fill-group {
-                gap: 8px;
+                gap: 10px;
+                flex-wrap: wrap;
             }
 
             .quick-fill-group button, .quantity-group button {
-                padding: 8px 12px;
-                font-size: 0.8em;
-                border-radius: 12px;
+                padding: 10px 14px;
+                font-size: 0.85em;
+                border-radius: 14px;
             }
 
             .quantity-group {
-                gap: 6px;
+                gap: 8px;
             }
 
             .free-text-buttons {
-                gap: 8px;
-                margin-top: 10px;
+                gap: 10px;
+                margin-top: 12px;
             }
 
             .free-text-buttons.row-1,
@@ -896,56 +899,164 @@
             }
 
             .free-text-buttons button {
+                padding: 10px 12px;
+                font-size: 0.85em;
+            }
+
+            .placeholder-text {
+                font-size: 0.85em;
+                line-height: 1.5;
+            }
+
+            .action-zone {
+                margin-top: 28px;
+            }
+
+            #generate-btn {
+                font-size: 1.15em;
+                padding: 16px 30px;
+                border-radius: 18px;
+            }
+
+            #results-container {
+                margin-top: 38px;
+                padding-top: 28px;
+                margin-bottom: 130px;
+            }
+
+            .result-item {
+                padding: 10px 12px 10px 8px;
+                border-radius: 14px;
+                margin-bottom: 8px;
+            }
+
+            .result-text {
+                padding: 0 10px 0 0;
+                font-size: 0.92em;
+                line-height: 1.4;
+            }
+
+            .result-actions {
+                gap: 6px;
+            }
+
+            .result-actions button {
+                width: 34px;
+                height: 34px;
+                font-size: 1.2em;
+            }
+
+            .tweet-checkbox {
+                margin: 2px 8px 0 4px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .bottom-action-bar {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .bottom-action-bar.expanded {
+                width: calc(100vw - 30px);
+                right: 15px;
+            }
+
+            .bottom-action-bar.collapsed {
+                right: 15px;
+                width: 60px;
+            }
+
+            .action-bar-header {
+                padding: 14px 18px;
+                font-size: 0.95em;
+            }
+
+            .action-bar-content {
+                padding: 16px;
+            }
+
+            .bottom-action-bar button {
+                padding: 12px 22px;
+                font-size: 0.95em;
+            }
+
+            .back-to-top {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4em;
+            }
+
+            .custom-modal-content {
+                padding: 30px 28px;
+                border-radius: 22px;
+                width: 90%;
+            }
+
+            .custom-modal-content p {
+                font-size: 1em;
+            }
+
+            .custom-modal-content button {
+                padding: 12px 30px;
+                font-size: 1em;
+            }
+        }
+
+        /* 超小手機 (max-width: 380px) */
+        @media (max-width: 380px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 20px 16px;
+                border-radius: 22px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+                margin-bottom: 22px;
+            }
+
+            .section-box {
+                padding: 16px 14px;
+                border-radius: 16px;
+            }
+
+            h2 {
+                font-size: 1.05em;
+            }
+
+            .checkbox-group div {
+                flex: 0 0 100%;
+            }
+
+            .quick-fill-group button, .quantity-group button {
+                padding: 8px 12px;
+                font-size: 0.8em;
+            }
+
+            .free-text-buttons.row-1,
+            .free-text-buttons.row-2,
+            .free-text-buttons.row-3 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .free-text-buttons button {
                 padding: 8px 10px;
                 font-size: 0.8em;
             }
 
-            .placeholder-text {
-                font-size: 0.8em;
-            }
-
-            .action-zone {
-                margin-top: 25px;
-            }
-
             #generate-btn {
                 font-size: 1.05em;
-                padding: 14px 25px;
-                border-radius: 16px;
-            }
-
-            #results-container {
-                margin-top: 35px;
-                padding-top: 25px;
-                margin-bottom: 120px;
-            }
-
-            .result-item {
-                padding: 8px 10px 8px 6px;
-                border-radius: 12px;
-                margin-bottom: 6px;
-            }
-
-            .result-text {
-                padding: 0 8px 0 0;
-                font-size: 0.88em;
-                line-height: 1.35;
-            }
-
-            .result-actions {
-                gap: 5px;
+                padding: 14px 24px;
             }
 
             .result-actions button {
                 width: 32px;
                 height: 32px;
                 font-size: 1.1em;
-            }
-
-            .tweet-checkbox {
-                margin: 2px 6px 0 3px;
-                width: 14px;
-                height: 14px;
             }
 
             .bottom-action-bar {
@@ -961,107 +1072,6 @@
             .bottom-action-bar.collapsed {
                 right: 12px;
                 width: 55px;
-            }
-
-            .action-bar-header {
-                padding: 12px 16px;
-                font-size: 0.9em;
-            }
-
-            .action-bar-content {
-                padding: 14px;
-            }
-
-            .bottom-action-bar button {
-                padding: 10px 20px;
-                font-size: 0.9em;
-            }
-
-            .back-to-top {
-                width: 48px;
-                height: 48px;
-                font-size: 1.3em;
-            }
-
-            .custom-modal-content {
-                padding: 28px 25px;
-                border-radius: 20px;
-                width: 92%;
-            }
-
-            .custom-modal-content p {
-                font-size: 0.95em;
-            }
-
-            .custom-modal-content button {
-                padding: 10px 28px;
-                font-size: 0.95em;
-            }
-        }
-
-        /* 超小手機 (max-width: 380px) */
-        @media (max-width: 380px) {
-            body {
-                padding: 8px;
-            }
-
-            .container {
-                padding: 18px 14px;
-                border-radius: 18px;
-            }
-
-            h1 {
-                font-size: 1.3em;
-                margin-bottom: 20px;
-            }
-
-            .section-box {
-                padding: 15px 12px;
-            }
-
-            h2 {
-                font-size: 1em;
-            }
-
-            .checkbox-group div {
-                flex: 0 0 100%;
-            }
-
-            .quick-fill-group button, .quantity-group button {
-                padding: 7px 10px;
-                font-size: 0.75em;
-            }
-
-            .free-text-buttons.row-1,
-            .free-text-buttons.row-2,
-            .free-text-buttons.row-3 {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .free-text-buttons button {
-                padding: 7px 8px;
-                font-size: 0.75em;
-            }
-
-            #generate-btn {
-                font-size: 1em;
-                padding: 12px 20px;
-            }
-
-            .result-actions button {
-                width: 30px;
-                height: 30px;
-                font-size: 1em;
-            }
-
-            .bottom-action-bar.expanded {
-                width: calc(100vw - 16px);
-                right: 8px;
-            }
-
-            .bottom-action-bar.collapsed {
-                right: 8px;
-                width: 50px;
             }
         }
 
@@ -1690,7 +1700,7 @@
             themeSeries: "劇集/作品",
             themeChemistry: "兩人的化學反應",
             themeVisuals: "外貌打扮",
-            themeHype: "純���持/打氣",
+            themeHype: "純支持/打氣",
             themeOst: "OST/主題曲",
             themeCallToAction: "呼籲",
             outputLangLabel: "2. 輸出語言：",
@@ -1803,11 +1813,11 @@
             freeTextHint: "คีย์เวิร์ดเหล่านี้จะถูกสุ่มแทรกเข้าไป คลิกคำด้านล่างเพื่อเลือกหลายคำ (คั่นด้วยจุลภาค) คลิกอีกครั้งเพื่อลบออก",
             paramSettings: "การตั้งค่าพารามิเตอร์",
             themesLabel: "1. ธีมเนื้อหา:",
-            themeSeries: "ซีรีส์/ผลงาน",
+            themeSeries: "ซีรีส์/ผล���าน",
             themeChemistry: "เคมี",
             themeVisuals: "ภาพลักษณ์/สไตล์",
             themeHype: "ซัพพอร์ต/ให้กำลังใจ",
-            themeOst: "เพลงประก���บ",
+            themeOst: "เพลงประกอบ",
             themeCallToAction: "เรียกร้อง",
             outputLangLabel: "2. ภาษาผลลัพธ์:",
             outputLangEn: "อังกฤษ",
@@ -1843,9 +1853,9 @@
             tutorialBtnTitle: "↑ ปุ่มเลื่อน",
             tutorialBtnDesc: "ปุ่มกลมที่มุมขวาล่างสามารถลากไปวางที่ไหนก็ได้ คลิกเดียว: ไปผลลัพธ์ ดับเบิลคลิก: กลับด้านบน",
             tutorialBatchTitle: "🔄 การดำเนินการเป็นกลุ่ม",
-            tutorialBatchDesc: "ใช้ 'สลับการเลือก' เพื่อเลือกทวีตที่ไม่ได้ติ๊ก ด้านล่างแสดงจำนวนที่เลือก",
+            tutorialBatchDesc: "ใช้ 'สลับการเลือก' เพื่อเลือกทวีตที่ไม่ได้ติ๊ก ด้านล่างแสดงจำนวนที่เลือ���",
             tutorialExportTitle: "💾 ตัวเลือกส่งออก",
-            tutorialExportDesc: "รองรับการคัดลอกไปคลิปบอร์ด ส่งออกเป็น CSV (Excel) และไฟล��� TXT",
+            tutorialExportDesc: "รองรับการคัดลอกไปคลิปบอร์ด ส่งออกเป็น CSV (Excel) และไฟล์ TXT",
             tutorialDontShow: "ไม่ต้องแสดงอีก",
             tutorialGotIt: "เข้าใจแล้ว"
         }
@@ -1950,7 +1960,7 @@
         // 暫時保留為佔位符
     }
 
-    // 頁面載入時���復語言設置
+    // 頁面載入時恢復語言設置
     document.addEventListener('DOMContentLoaded', () => {
         try {
             const savedLang = localStorage.getItem('preferredLang'); // eslint-disable-line no-restricted-globals
@@ -2261,7 +2271,7 @@
                 // CP向 & 人物（適用於藝人/角色，不適用於劇集）
                 "โอ้ยยยย {Input} ทำถึงมากกกกกก ไม่ไหวแล้วแม่ ahhhhhh",
                 "กรี๊ดดดดดดด {Input} ดีงามพระรามแปดมากเวอร์ 55555555",
-                "ช่วยด้วยยยย {Input} หล่อ/สว��� ทำลา���ล้างมากกกกกก",
+                "ช่วยด้วยยยย {Input} หล่อ/สวย ทำลา���ล้างมากกกกกก",
                 "รัก {Input} เท่าจักรวาลลลลลลลลลลลลลลลล",
                 "ชอบมากกกกก {Input} ทำได้ดีเสมอมาาาา",
                 "จะซัพพอร์ต {Input} ตลอดไปไม่ว่าจะเกิดอะไร!!!",
@@ -2334,9 +2344,9 @@
                 "{Input} สุดยอดจริงๆ ภูมิใจมากกกกกก!!!",
                 "ตายสงบศพสีชมพูเพราะ {Input} เลยวันนี้ ฮืออออออ",
                 "{Input} คือที่สุดของที่สุด ไม่มีใครต้านได้แล้ว",
-                "เขินจนตัวบิดไปหมดแล้วกับ {Input} งื้ออออออออออ",
+                "เขินจนตัวบิดไปหมดแล้วกับ {Input} ง���้ออออออออออ",
                 "ใครไหวไปก่อนเลย ทางนี้ไม่ไหวกับ {Input} แล้ว",
-                "ขอยาดมด่วนนนน {Input} แรงมากกกก���กกก",
+                "ขอยาดมด่วนนนน {Input} แรงมากกกกกกกก",
                 "{Input} ดีมากกกก ตื่นเต้นจนนอนไม่หลับเลย!!!",
                 "ตื่นเต้นมากกกกกก {Input} ทำให้ใจเต้นแรงงงงง",
                 "เร้าใจสุดๆ กับ {Input} รอไม่ไหวแล้วววว",
@@ -2371,7 +2381,7 @@
                 "หัวใจเต็มเปี่ยมมากกก จะระเบิดแล้ว!!!",
                 "ทำให้อาทิตย์นี้สมบูรณ์เลย ไม่มีตลก!!!",
                 "ไม่โอเค ไม่มีทางโอเคได้อีกแล้ว!!!",
-                "กำลังลอยสู���สวรรค์อยู���ตอนนี้เลย!!!",
+                "กำลังลอยสู่สวรรค์อยู���ตอนนี้เลย!!!",
                 "นี่คือทุกอย่างที่หวังและมากกว่า!!!",
                 "ไม่มีคำพูดเหลือ มีแต่ความรู้สึก!!!",
                 "ร้องไห้น้ำตาดีใจ สวยงามมาก!!!",
@@ -2405,9 +2415,9 @@
                 "{Input} clingy moments น่ารักที่สุดเลย กรี๊ดดดดด!!!",
                 "{Input} ติดกันตลอดเวลาน่ารักมากกกก ฟินสุดๆ!!!",
                 "{Input} มองกันแบบนี้ ทนไม่ไหวแล้วจริงๆ!!!",
-                "หยุดนะ {Input} วางมือแบบนี้หัวใจไม่ไหวแล้ว!!!",
+                "หยุดนะ {Input} วางมือแบบนี้หัวใจไม่ไห���แล้ว!!!",
                 "เพิ่งสังเกต {Input} positioning ธรรมชาติมาก ลงตัวสุดๆ",
-                "{Input} possessive moments ทำให้รู้สึกอะไรบางอย่���ง!!!",
+                "{Input} possessive moments ทำให้รู้สึกอะไรบางอย่าง!!!",
                 "{Input} อยู่ใกล้กันตลอด ไม่อยากให้ห่างกันเลย!!!",
                 "ช่วงที่ {Input} แตะกัน หยุดหายใจไปเลยจริงๆ!!!",
                 "{Input} อยู่ใกล้กันแบบนี้ผิดกฎหมายแล้วนะ หัวใจไม่ไหว!!!",
@@ -2478,9 +2488,9 @@
                 "{Input} OST ฟังซ้ำไม่รู้กี่รอบ ติดหูมากกกก",
                 "เพลงประกอบ {Input} เพราะจนต้องร้องไห้ ซึ้งมาก!!!",
                 "{Input} soundtrack เพราะทุกเพลงเลย ชอบสุดๆ",
-                "ติดหู {Input} OST มากกกก ฟังไปร้องไปเลย!!!",
+                "ติดหู {Input} OST มากกกก ฟัง���ปร้องไปเลย!!!",
                 "ทุกเพลงใน {Input} คือผลงานชิ้นเอก เพราะมาก",
-                "{Input} OST ทำให้น้ำตาไหล ซาวด์แทร็ก���ีมาก!!!",
+                "{Input} OST ทำให้น้ำตาไหล ซาวด์แทร็กดีมาก!!!",
                 "���นตรีใน {Input} เพิ่มอารมณ์มากกกก เพราะสุดๆ",
                 "เพลง {Input} ฟังไม่พอ เพราะเกินห้ามใจ!!!",
                 "{Input} theme song คือเพลงโปรดใหม่ ฟังตลอด"
@@ -2773,7 +2783,7 @@
     function selectAppropriateInput(inputArray, targetLang) {
         if (!inputArray || inputArray.length === 0) return null;
 
-        // 過濾掉不合適���詞（例如英文推文不使用泰文詞）
+        // 過濾掉不合適的詞（例如英文推文不使用泰文詞）
         const suitableInputs = inputArray.filter(input => {
             if (targetLang === 'en' && containsThai(input)) {
                 return false;
@@ -3070,7 +3080,7 @@
             });
         }
 
-        // 反選
+        // ���選
         const invertBtn = document.getElementById('invert-selection-btn');
         if (invertBtn) {
             invertBtn.addEventListener('click', invertSelection);
